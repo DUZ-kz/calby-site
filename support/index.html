@@ -100,6 +100,13 @@
       gap: 14px;
     }
 
+    .locale-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 8px;
+    }
+
     .card {
       background: rgba(255, 255, 255, 0.82);
       border: 1px solid var(--border);
@@ -115,10 +122,19 @@
       padding: 12px 18px;
       border-radius: 999px;
       color: #fff;
-      background: linear-gradient(135deg, #cf6f2c, #e08b3e);
+      background: linear-gradient(135deg, #a94713, #cf6f2c);
       text-decoration: none;
       font-weight: 800;
       margin-top: 6px;
+      box-shadow: 0 10px 24px rgba(169, 71, 19, 0.22);
+    }
+
+    .card a.contact-button {
+      color: #fff;
+    }
+
+    .contact-button:hover {
+      background: linear-gradient(135deg, #8f390d, #bc5c1e);
     }
 
     @media (max-width: 640px) {
@@ -147,6 +163,28 @@
         <a class="pill" href="/calby-site/privacy/">Privacy Policy</a>
         <a class="pill" href="/calby-site/privacy-choices/">Privacy Choices</a>
         <a class="pill" href="/calby-site/support/" target="_blank" rel="noreferrer">Website</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Language support</h2>
+      <div class="locale-grid">
+        <div class="card" lang="ru">
+          <strong>Русский</strong>
+          <p>По вопросам входа, синхронизации, сканирования, приватности или удаления аккаунта напишите в поддержку.</p>
+          <ul>
+            <li>Email: <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a></li>
+            <li>Укажите email аккаунта, модель iPhone, версию iOS и краткое описание проблемы.</li>
+          </ul>
+        </div>
+        <div class="card" lang="kk">
+          <strong>Қазақша</strong>
+          <p>Кіру, синхрондау, сканерлеу, құпиялылық немесе аккаунтты жою сұрақтары бойынша қолдау қызметіне жазыңыз.</p>
+          <ul>
+            <li>Email: <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a></li>
+            <li>Аккаунт email-ін, iPhone моделін, iOS нұсқасын және мәселенің қысқа сипаттамасын көрсетіңіз.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
