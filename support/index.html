@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calby Support</title>
+  <style>
+    :root {
+      --bg: #f6efe3;
+      --card: rgba(255, 252, 247, 0.96);
+      --text: #251a12;
+      --muted: #6a5b4a;
+      --border: rgba(120, 88, 49, 0.18);
+      --accent: #cf6f2c;
+      --accent-soft: rgba(207, 111, 44, 0.12);
+      --shadow: 0 24px 70px rgba(92, 57, 24, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(255, 189, 117, 0.28), transparent 24%),
+        radial-gradient(circle at bottom left, rgba(255, 225, 190, 0.28), transparent 26%),
+        linear-gradient(180deg, #fbf3e7 0%, #f5eddf 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 32px 18px 72px;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 26px;
+      padding: 24px;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 8px 12px;
+      background: var(--accent-soft);
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    h1,
+    h2 {
+      margin: 0 0 12px;
+      line-height: 1.14;
+      font-family: "Iowan Old Style", "Palatino Linotype", serif;
+    }
+
+    h1 { font-size: clamp(2.1rem, 4vw, 3.4rem); }
+    h2 { font-size: 1.35rem; }
+    p, li { margin: 0 0 10px; }
+    ul { margin: 0; padding-left: 20px; }
+
+    .muted { color: var(--muted); }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .nav a,
+    .card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .pill {
+      display: inline-flex;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.75);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      color: #fff;
+      background: linear-gradient(135deg, #cf6f2c, #e08b3e);
+      text-decoration: none;
+      font-weight: 800;
+      margin-top: 6px;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        padding: 20px 14px 56px;
+      }
+
+      section {
+        padding: 20px;
+        border-radius: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <div class="eyebrow">Calby Support</div>
+      <h1>Support</h1>
+      <p class="muted">Last updated: May 5, 2026</p>
+      <p>
+        This is the public support entry point for Calby. Use it for account, sync,
+        scan, privacy, and App Store review-related questions.
+      </p>
+      <div class="nav">
+        <a class="pill" href="/calby-site/privacy/">Privacy Policy</a>
+        <a class="pill" href="/calby-site/privacy-choices/">Privacy Choices</a>
+        <a class="pill" href="/calby-site/support/" target="_blank" rel="noreferrer">Website</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact support</h2>
+      <div class="card">
+        <p><strong>Public support email</strong></p>
+        <p><a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a></p>
+        <a class="contact-button" href="mailto:calby.support@gmail.com?subject=Calby%20Support">Email Calby Support</a>
+      </div>
+      <p class="muted">Include your account email, device model, iOS version, and a short description of the issue so support can respond faster.</p>
+    </section>
+
+    <section>
+      <h2>What support can help with</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Account and sign-in</strong>
+          <p>Magic link issues, Apple or Google sign-in problems, password reset questions, and account recovery.</p>
+        </div>
+        <div class="card">
+          <strong>Sync and restore</strong>
+          <p>Restoring profile data, synced app state, and backed-up body progress photos after moving to a new iPhone.</p>
+        </div>
+        <div class="card">
+          <strong>Scans and app behavior</strong>
+          <p>Meal scan failures, fridge scan issues, temporary rate-limit blocks, and unexpected AI results.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Common help topics</h2>
+      <ul>
+        <li><strong>Sign-in issues:</strong> confirm you are using the same sign-in method you used previously.</li>
+        <li><strong>Changed phones:</strong> sign in with the same Calby account to restore synced profile data and app state.</li>
+        <li><strong>Resetting progress:</strong> use <strong>Reset my data</strong> in Profile to clear synced profile and app-state data for the signed-in account and remove related local data on the current iPhone.</li>
+        <li><strong>Deleting the account:</strong> use <strong>Delete account</strong> in Profile if you want the entire Calby account permanently removed.</li>
+        <li><strong>Missing photos:</strong> body progress photos back up to the signed-in account. Stay signed in and give restore a moment to finish.</li>
+        <li><strong>Scan limits:</strong> Calby applies backend usage protections and may temporarily block scans if requests happen too quickly.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Privacy and account requests</h2>
+      <p>
+        For privacy-related questions, account deletion follow-up, or data handling concerns,
+        email <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a> and mention that the request is privacy-related.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
