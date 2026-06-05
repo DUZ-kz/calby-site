@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calby Privacy Choices</title>
+  <style>
+    :root { --bg: #f7f2fb; --card: #fffcff; --text: #201626; --muted: #675974; --border: rgba(109,59,140,.16); --accent: #6d3b8c; --accent-soft: rgba(109,59,140,.12); }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Avenir Next", "Segoe UI", sans-serif; background: linear-gradient(180deg, #f7f2fb 0%, #f0e9f7 100%); color: var(--text); line-height: 1.65; }
+    main { max-width: 940px; margin: 0 auto; padding: 32px 18px 72px; }
+    section { background: var(--card); border: 1px solid var(--border); border-radius: 24px; padding: 24px; margin-bottom: 18px; }
+    .eyebrow { display: inline-flex; color: var(--accent); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; padding: 8px 12px; background: var(--accent-soft); border-radius: 999px; margin-bottom: 14px; }
+    h1, h2 { margin: 0 0 12px; line-height: 1.14; font-family: "Iowan Old Style", "Palatino Linotype", serif; }
+    h1 { font-size: clamp(2.1rem, 4vw, 3.4rem); } h2 { font-size: 1.35rem; }
+    p, li { margin: 0 0 10px; } ul { margin: 0; padding-left: 20px; }
+    .muted { color: var(--muted); }
+    .nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    a { color: var(--accent); font-weight: 700; text-decoration: none; }
+    .pill { display: inline-flex; padding: 10px 14px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,.76); }
+    @media (max-width: 640px) { main { padding: 20px 14px 56px; } section { padding: 20px; border-radius: 22px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <div class="eyebrow">Calby Privacy Choices</div>
+      <h1>Privacy Choices</h1>
+      <p class="muted">Last updated: May 5, 2026</p>
+      <p>This page explains the current privacy-related actions available in Calby and when a request should go through support.</p>
+      <div class="nav">
+        <a class="pill" href="/calby-site/privacy/">Privacy Policy</a>
+        <a class="pill" href="/calby-site/support/">Support</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>In-app controls available today</h2>
+      <ul>
+        <li><strong>Edit preferences:</strong> update profile details and goals inside the app.</li>
+        <li><strong>Reminder settings:</strong> adjust notification preferences from the Profile screen.</li>
+        <li><strong>Reset my data:</strong> clear synced profile and app-state data for the signed-in account and remove related local data on the current iPhone.</li>
+        <li><strong>Delete account:</strong> permanently remove the Calby account, synced data, and local files tied to that account on the current iPhone.</li>
+        <li><strong>Sign out:</strong> remove the current session from the device.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Requests that should go through support</h2>
+      <ul>
+        <li>Account deletion follow-up requests</li>
+        <li>Questions about synced data retention</li>
+        <li>Questions about AI scan processing</li>
+        <li>Requests related to privacy laws that apply in your region</li>
+      </ul>
+      <p><strong>How to request help:</strong> email <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a> or use the hosted support page.</p>
+    </section>
+
+    <section>
+      <h2>Current data model note</h2>
+      <p>Profile information, synced app state, and backed-up body progress photos can be restored after sign-in on a new phone.</p>
+    </section>
+  </main>
+</body>
+</html>
