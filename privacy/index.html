@@ -18,6 +18,8 @@
     .nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
     a { color: var(--accent); font-weight: 700; text-decoration: none; }
     .pill { display: inline-flex; padding: 10px 14px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,.72); }
+    .locale-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 8px; }
+    .locale-card { background: rgba(255,255,255,.82); border: 1px solid var(--border); border-radius: 18px; padding: 18px; }
     @media (max-width: 640px) { main { padding: 20px 14px 56px; } section { padding: 20px; border-radius: 22px; } }
   </style>
 </head>
@@ -31,6 +33,22 @@
       <div class="nav">
         <a class="pill" href="/calby-site/support/">Support</a>
         <a class="pill" href="/calby-site/privacy-choices/">Privacy Choices</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Language summary</h2>
+      <div class="locale-grid">
+        <div class="locale-card" lang="ru">
+          <strong>Русский</strong>
+          <p>Calby собирает данные аккаунта, профиль, настройки, историю питания и изображения, которые вы отправляете для анализа.</p>
+          <p>Изображения отправляются на backend Calby для проверки, защиты от злоупотреблений и обработки результата. По вопросам приватности пишите на <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a>.</p>
+        </div>
+        <div class="locale-card" lang="kk">
+          <strong>Қазақша</strong>
+          <p>Calby аккаунт деректерін, профильді, баптауларды, тамақтану тарихын және талдауға жіберген суреттерді жинайды.</p>
+          <p>Суреттер тексеру, қауіпсіздік және нәтижені өңдеу үшін Calby backend-іне жіберіледі. Құпиялылық сұрақтары бойынша <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a> мекенжайына жазыңыз.</p>
+        </div>
       </div>
     </section>
 
