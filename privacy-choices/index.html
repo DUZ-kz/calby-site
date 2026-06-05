@@ -18,6 +18,8 @@
     .nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
     a { color: var(--accent); font-weight: 700; text-decoration: none; }
     .pill { display: inline-flex; padding: 10px 14px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,.76); }
+    .locale-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 8px; }
+    .locale-card { background: rgba(255,255,255,.82); border: 1px solid var(--border); border-radius: 18px; padding: 18px; }
     @media (max-width: 640px) { main { padding: 20px 14px 56px; } section { padding: 20px; border-radius: 22px; } }
   </style>
 </head>
@@ -31,6 +33,22 @@
       <div class="nav">
         <a class="pill" href="/calby-site/privacy/">Privacy Policy</a>
         <a class="pill" href="/calby-site/support/">Support</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Language summary</h2>
+      <div class="locale-grid">
+        <div class="locale-card" lang="ru">
+          <strong>Русский</strong>
+          <p>В приложении можно обновить профиль, изменить напоминания, сбросить данные или удалить аккаунт.</p>
+          <p>Если вопрос связан с приватностью, хранением данных или удалением аккаунта, напишите на <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a>.</p>
+        </div>
+        <div class="locale-card" lang="kk">
+          <strong>Қазақша</strong>
+          <p>Қолданбада профильді жаңартуға, еске салғыштарды өзгертуге, деректерді өшіруге немесе аккаунтты жоюға болады.</p>
+          <p>Құпиялылық, деректерді сақтау немесе аккаунтты жою бойынша сұрақ болса, <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a> мекенжайына жазыңыз.</p>
+        </div>
       </div>
     </section>
 
