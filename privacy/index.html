@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calby Privacy Policy</title>
+  <style>
+    :root { --bg: #f7f1e7; --card: #fffdf8; --text: #241c12; --muted: #64594a; --border: rgba(115, 92, 65, 0.18); --accent: #1d7a52; --accent-soft: rgba(29, 122, 82, 0.12); }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Avenir Next", "Segoe UI", sans-serif; background: linear-gradient(180deg, #f7f1e7 0%, #f2ece1 100%); color: var(--text); line-height: 1.65; }
+    main { max-width: 980px; margin: 0 auto; padding: 32px 18px 72px; }
+    section { background: var(--card); border: 1px solid var(--border); border-radius: 24px; padding: 24px; margin-bottom: 18px; }
+    .eyebrow { display: inline-flex; color: var(--accent); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; padding: 8px 12px; background: var(--accent-soft); border-radius: 999px; margin-bottom: 14px; }
+    h1, h2 { margin: 0 0 12px; line-height: 1.14; font-family: "Iowan Old Style", "Palatino Linotype", serif; }
+    h1 { font-size: clamp(2.1rem, 4vw, 3.6rem); } h2 { font-size: 1.35rem; }
+    p, li { margin: 0 0 10px; } ul { margin: 0; padding-left: 20px; }
+    .muted { color: var(--muted); }
+    .nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    a { color: var(--accent); font-weight: 700; text-decoration: none; }
+    .pill { display: inline-flex; padding: 10px 14px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,.72); }
+    @media (max-width: 640px) { main { padding: 20px 14px 56px; } section { padding: 20px; border-radius: 22px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <div class="eyebrow">Calby Privacy</div>
+      <h1>Privacy Policy</h1>
+      <p class="muted">Last updated: May 5, 2026</p>
+      <p>This Privacy Policy explains what Calby collects, how it is used, and what choices are available to you when you use the app.</p>
+      <div class="nav">
+        <a class="pill" href="/calby-site/support/">Support</a>
+        <a class="pill" href="/calby-site/privacy-choices/">Privacy Choices</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>What Calby does</h2>
+      <p>Calby helps users log food, analyze meal and fridge photos, track nutrition progress, and maintain a wellness profile tied to an account.</p>
+      <p>Calby is a wellness and nutrition product. It is not medical care, a medical device, or a substitute for professional medical advice.</p>
+    </section>
+
+    <section>
+      <h2>Information we collect</h2>
+      <ul>
+        <li><strong>Account information:</strong> email address and account identifiers from Supabase Auth.</li>
+        <li><strong>Profile information:</strong> name, age, height, weight, unit preference, goal, diet preference, allergies or intolerances, activity level, skin concern, and reminder preferences that the user chooses to enter.</li>
+        <li><strong>App progress data:</strong> saved meals, nutrition summaries, scan history, reminder setup, and related app state that syncs to the account.</li>
+        <li><strong>Scan inputs:</strong> food and fridge images submitted for analysis, plus structured scan context such as goal or portion hints.</li>
+        <li><strong>Optional meal details:</strong> short food-scan notes such as dish name, ingredients, rough weight, or sauce and oil context.</li>
+        <li><strong>Usage and security data:</strong> request timestamps, approximate request size, status codes, token counts, and limited network metadata such as IP address for abuse prevention and service protection.</li>
+        <li><strong>Barcode lookups:</strong> barcode values scanned or typed when looking up packaged foods.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How we use information</h2>
+      <ul>
+        <li>To create and maintain accounts.</li>
+        <li>To save and restore profile data and synced app progress across devices.</li>
+        <li>To analyze food and fridge photos and return nutrition-related results.</li>
+        <li>To operate reminders and account settings users choose to enable.</li>
+        <li>To detect abuse, rate-limit requests, measure usage, and control service costs.</li>
+        <li>To troubleshoot issues, support users, and improve the app experience.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How Calby processes images</h2>
+      <p>When a live food or fridge scan is run, the image is sent to Calby's backend so the request can be authenticated, validated, rate-limited, and processed for analysis.</p>
+      <p>The backend stores usage and security metadata about the request. Signed-in body progress photos are backed up to a private Supabase Storage bucket so they can restore on another iPhone.</p>
+    </section>
+
+    <section>
+      <h2>Third-party services</h2>
+      <ul>
+        <li><strong>Supabase:</strong> authentication, synced profile data, synced app state, storage, and backend functions.</li>
+        <li><strong>AI processing providers:</strong> used by Calby's backend to analyze food and fridge images that users intentionally submit for AI results.</li>
+        <li><strong>Open Food Facts:</strong> barcode-based packaged food lookups.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Your choices</h2>
+      <ul>
+        <li>Profile details and preferences can be updated in the app.</li>
+        <li><strong>Reset my data</strong> clears synced profile and app-state data for the signed-in account and removes related local data from the current iPhone.</li>
+        <li><strong>Delete account</strong> permanently deletes the Calby account, synced data, and local files tied to that account on the current iPhone.</li>
+        <li>Users can contact Calby about account deletion, privacy requests, or support follow-up through the public support page or support email.</li>
+      </ul>
+      <p>Email <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a> for support and privacy requests.</p>
+    </section>
+
+    <section>
+      <h2>Children's privacy</h2>
+      <p>Calby is not intended for children under 13, and Calby does not knowingly collect personal information from children under 13.</p>
+    </section>
+  </main>
+</body>
+</html>
