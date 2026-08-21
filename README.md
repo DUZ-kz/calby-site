@@ -1,6 +1,6 @@
-# Calby public site
+# Colby public site
 
-Public support, privacy policy, and privacy choices pages for Calby.
+Public support, privacy policy, and privacy choices pages for Colby.
 
 Published pages:
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calby Privacy Policy</title>
+  <title>Colby Privacy Policy</title>
   <style>
     :root { --bg: #f7f1e7; --card: #fffdf8; --text: #241c12; --muted: #64594a; --border: rgba(115, 92, 65, 0.18); --accent: #1d7a52; --accent-soft: rgba(29, 122, 82, 0.12); }
     * { box-sizing: border-box; }
@@ -26,10 +26,10 @@
 <body>
   <main>
     <section>
-      <div class="eyebrow">Calby Privacy</div>
+      <div class="eyebrow">Colby Privacy</div>
       <h1>Privacy Policy</h1>
-      <p class="muted">Last updated: May 5, 2026</p>
-      <p>This Privacy Policy explains what Calby collects, how it is used, and what choices are available to you when you use the app.</p>
+      <p class="muted">Last updated: August 21, 2026</p>
+      <p>This Privacy Policy explains what Colby collects, how it is used, how long it is retained, and what choices are available to you when you use the app.</p>
       <div class="nav">
         <a class="pill" href="/calby-site/support/">Support</a>
         <a class="pill" href="/calby-site/privacy-choices/">Privacy Choices</a>
@@ -41,21 +41,21 @@
       <div class="locale-grid">
         <div class="locale-card" lang="ru">
           <strong>Русский</strong>
-          <p>Calby собирает данные аккаунта, профиль, настройки, историю питания и изображения, которые вы отправляете для анализа.</p>
-          <p>Изображения отправляются на backend Calby для проверки, защиты от злоупотреблений и обработки результата. По вопросам приватности пишите на <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a>.</p>
+          <p>Colby собирает данные аккаунта, профиль, настройки, историю питания и изображения, которые вы отправляете для анализа.</p>
+          <p>Данные аккаунта хранятся, пока аккаунт активен, и удаляются при удалении аккаунта, кроме ограниченных записей, которые могут временно сохраняться для безопасности, предотвращения мошенничества или юридических требований. По вопросам приватности пишите на <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a>.</p>
         </div>
         <div class="locale-card" lang="kk">
           <strong>Қазақша</strong>
-          <p>Calby аккаунт деректерін, профильді, баптауларды, тамақтану тарихын және талдауға жіберген суреттерді жинайды.</p>
-          <p>Суреттер тексеру, қауіпсіздік және нәтижені өңдеу үшін Calby backend-іне жіберіледі. Құпиялылық сұрақтары бойынша <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a> мекенжайына жазыңыз.</p>
+          <p>Colby аккаунт деректерін, профильді, баптауларды, тамақтану тарихын және талдауға жіберген суреттерді жинайды.</p>
+          <p>Аккаунт деректері аккаунт белсенді болғанша сақталады және аккаунт жойылғанда өшіріледі, бірақ қауіпсіздік, алаяқтықтың алдын алу немесе заңды талаптар үшін шектеулі жазбалар уақытша сақталуы мүмкін. Құпиялылық сұрақтары бойынша <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a> мекенжайына жазыңыз.</p>
         </div>
       </div>
     </section>
 
     <section>
-      <h2>What Calby does</h2>
-      <p>Calby helps users log food, analyze meal and fridge photos, track nutrition progress, and maintain a wellness profile tied to an account.</p>
-      <p>Calby is a wellness and nutrition product. It is not medical care, a medical device, or a substitute for professional medical advice.</p>
+      <h2>What Colby does</h2>
+      <p>Colby helps users log food, analyze meal and fridge photos, track nutrition progress, and maintain a wellness profile tied to an account.</p>
+      <p>Colby is a wellness and nutrition product. It is not medical care, a medical device, or a substitute for professional medical advice.</p>
     </section>
 
     <section>
@@ -84,17 +84,30 @@
     </section>
 
     <section>
-      <h2>How Calby processes images</h2>
-      <p>When a live food or fridge scan is run, the image is sent to Calby's backend so the request can be authenticated, validated, rate-limited, and processed for analysis.</p>
-      <p>The backend stores usage and security metadata about the request. Signed-in body progress photos are backed up to a private Supabase Storage bucket so they can restore on another iPhone.</p>
+      <h2>How Colby processes images</h2>
+      <p>When a live food or fridge scan is run, the image is sent to Colby's backend so the request can be authenticated, validated, rate-limited, and processed for analysis.</p>
+      <p>Colby uses submitted scan images to return the requested nutrition result. Colby does not use food or fridge scan images for advertising or sell them. Signed-in body progress photos, when that feature is used, are backed up to private storage so they can restore after sign-in on another device.</p>
     </section>
 
     <section>
       <h2>Third-party services</h2>
       <ul>
         <li><strong>Supabase:</strong> authentication, synced profile data, synced app state, storage, and backend functions.</li>
-        <li><strong>AI processing providers:</strong> used by Calby's backend to analyze food and fridge images that users intentionally submit for AI results.</li>
+        <li><strong>AI processing providers:</strong> used by Colby's backend to analyze food and fridge images that users intentionally submit for AI results.</li>
         <li><strong>Open Food Facts:</strong> barcode-based packaged food lookups.</li>
+        <li><strong>RevenueCat and Google Play Billing:</strong> subscription entitlement and purchase-status management.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Data storage, retention, and deletion</h2>
+      <ul>
+        <li><strong>Account, profile, goals, preferences, meal history, nutrition progress, reminder settings, favorites, and synced app state:</strong> retained while your account is active so the app can sync and restore your data across signed-in devices. This data is deleted when you delete your account or cleared when you use the available reset controls, except where limited retention is needed for security, fraud prevention, abuse prevention, billing records, dispute handling, or legal compliance.</li>
+        <li><strong>Food and fridge scan images:</strong> processed to generate the requested scan result. Colby does not keep these uploaded scan images as permanent account files after the scan result is returned, unless a separate feature clearly asks you to save an image.</li>
+        <li><strong>Body progress photos:</strong> retained in private account storage while your account is active and the photo remains part of your saved progress. They are deleted when you delete your account or remove/reset that saved progress.</li>
+        <li><strong>AI scan usage, quota, security, and anti-abuse records:</strong> retained for up to 90 days for service protection, troubleshooting, cost control, and fraud prevention, unless a longer period is required to investigate abuse, resolve disputes, or comply with law.</li>
+        <li><strong>Support and privacy emails:</strong> retained for up to 24 months so Colby can respond to requests and keep records of privacy or account-support actions.</li>
+        <li><strong>Backups and service-provider copies:</strong> deletion from active systems is intended to happen promptly after an account deletion request is completed. Some encrypted backups, logs, or service-provider records may take up to 90 days to expire, unless longer retention is required for security, fraud prevention, billing, dispute resolution, or legal compliance.</li>
       </ul>
     </section>
 
@@ -102,16 +115,17 @@
       <h2>Your choices</h2>
       <ul>
         <li>Profile details and preferences can be updated in the app.</li>
-        <li><strong>Reset my data</strong> clears synced profile and app-state data for the signed-in account and removes related local data from the current iPhone.</li>
-        <li><strong>Delete account</strong> permanently deletes the Calby account, synced data, and local files tied to that account on the current iPhone.</li>
-        <li>Users can contact Calby about account deletion, privacy requests, or support follow-up through the public support page or support email.</li>
+        <li><strong>Reset my data</strong> clears synced profile and app-state data for the signed-in account and removes related local data from the current device.</li>
+        <li><strong>Delete account</strong> permanently deletes the Colby account, synced data, and local files tied to that account on the current device.</li>
+        <li>If you cannot access the app, you can request account deletion or data deletion by emailing <a href="mailto:calby.support@gmail.com?subject=Colby%20Account%20Deletion%20Request">calby.support@gmail.com</a> with the subject "Colby Account Deletion Request" and the email address connected to your account.</li>
+        <li>Users can contact Colby about account deletion, privacy requests, or support follow-up through the public support page or support email.</li>
       </ul>
       <p>Email <a href="mailto:calby.support@gmail.com">calby.support@gmail.com</a> for support and privacy requests.</p>
     </section>
 
     <section>
       <h2>Children's privacy</h2>
-      <p>Calby is not intended for children under 13, and Calby does not knowingly collect personal information from children under 13.</p>
+      <p>Colby is not intended for children under 13, and Colby does not knowingly collect personal information from children under 13.</p>
     </section>
   </main>
 </body>
